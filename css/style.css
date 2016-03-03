@@ -1,0 +1,157 @@
+/*************************
+ *	Global Style
+ *************************/
+
+*{
+	margin:0;
+	padding:0;
+	font-family:"TheSans"calibri,arial,sans-serif;
+	color:#333;
+}
+html{height:100%;}
+.clearfix{clear:both;}
+
+/*************************
+ *	Header, Toolbar
+ *************************/
+#header{
+	background:url(../img/a.jpg);}
+#logo{
+	margin:10px 0 10px 10px;
+	display: inline-block;
+	
+}
+#judul{
+	float: right;
+	margin-top: 50px;
+	margin-right: 400px;
+	text-align: center;
+	color: blue;
+}
+#logo img{
+	width: 219px;
+	height: 75px;
+}
+#toolbar{
+	border-top:1px solid #e3e3e3;
+	border-bottom:1px solid #e3e3e3;
+	height:20px;
+	padding:10px;
+	box-shadow:0 5px 10px -7px rgba(0,0,0,.3);
+	height:30px;
+	background: -webkit-linear-gradient(top,#fff,#efefef);
+}
+#editor-toolbar,#preview-toolbar{
+	width:50%;
+	float:left;
+}
+#toolbar h2{
+	font-weight:normal;
+	text-shadow:0 1px 1px white;
+	color:#888;
+	line-height:35px;
+	display: inline-block;
+}
+.icon{
+	font-family:"web symbols";
+	margin-right:20px;
+	font-size:16px;
+	position: relative;
+	top:-2px;
+	color:#888;
+}
+
+#toolbar ul{list-style:none;float:right;margin-right:20px;}
+#toolbar ul li{float:left;}
+
+.button{
+	padding:5px 10px;
+	border:1px solid #e3e3e3;
+	border-radius:3px;
+	cursor:pointer;
+	background: -webkit-linear-gradient(top,#fff,#eee);
+	box-shadow:0 1px 1px white;
+}
+#download{
+	padding:0;width:100px;height:30px;
+	border:1px solid #e3e3e3;
+	border-radius:3px;
+	cursor:pointer;
+	box-shadow:0 1px 1px white;
+	position: relative;
+	z-index:2;
+}
+#download:after{
+	content:"Download";
+	position: absolute;
+	top:0;left:0;
+	width:100px;
+	height:25px;
+	padding-top:5px;
+	text-align:center;
+	background: -webkit-linear-gradient(top,#fff,#eee);
+	z-index:-1;
+}
+/*************************
+ *	IDE (EDITOR & PREVIEW)
+ *************************/
+#ide{
+	position: absolute;
+	padding-top:10px;
+	top:150px;
+	left:0;
+	right:0;
+	bottom:10px;
+}
+#editor, #preview{
+	width:50%;
+	float:left;
+	height:100%;
+	position:relative;
+}
+.container{
+	height:100%;
+	position: absolute;
+	top:-10px;
+	left:0;
+	right:0;
+	bottom:10px;
+}
+#editor .container{
+	border-right:1px solid #e3e3e3;
+	bottom:0;
+}
+.container textarea,.container iframe,.CodeMirror{
+	height:100%;
+	width:100%;
+	resize:none;
+	border:none;
+	outline:none;
+}
+.container iframe{
+	
+	position:absolute;
+	
+}
+
+/*************************
+ *	CodeMirror Style Fix
+ *************************/
+.CodeMirror-scroll{height:100%  !important}
+.CodeMirror-gutter,.CodeMirror-lines{line-height:20px;}
+
+::-webkit-scrollbar {
+	width : 5px;
+	height: 5px;
+}
+::-webkit-scrollbar-thumb {
+	-webkit-border-radius: 10px;
+	border-radius        : 10px;
+	background           : #A8DAEA;
+}
+::-webkit-slider-thumb element,
+::-webkit-scrollbar-track {
+	background           : white;
+	-webkit-border-radius: 10px;
+	border-radius        : 10px;
+}
